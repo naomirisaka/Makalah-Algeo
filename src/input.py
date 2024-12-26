@@ -6,7 +6,7 @@ def input_matrix(): # matrix input and validation
         print("The amount of control variables must be at least 1. Please try again.")
         dim = int(input("Amount of control variables: "))
 
-    print(f"Input the influence (-1 to 1) between control variables in {dim} x {dim} matrix form.") # negative indicates negative correlation
+    print(f"Input the influence (-1 to 1) between control variables in {dim} x {dim} matrix form:") # negative indicates negative correlation
     mat = []
     for i in range(dim):
         while True:
@@ -27,7 +27,8 @@ def input_matrix(): # matrix input and validation
 
 def input_initial_state(n): # vector input and validation
     while True:
-        x = list(map(float, input(f"Input the initial control state vector for each variable ({n} elements): ").split()))
+        print(f"Input the initial control state vector for each variable ({n} elements): ")
+        x = list(map(float, input().split()))
         if len(x) != n:
             print(f"The vector must contain exactly {n} elements. Please try again.")
             continue
