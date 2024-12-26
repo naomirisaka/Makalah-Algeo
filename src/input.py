@@ -22,10 +22,10 @@ def input_matrix(): # matrix input and validation
 
     return np.array(mat)
 
-def input_initial_state(dim): # vector input and validation
+def input_initial_state(n): # vector input and validation
     while True:
-        x = list(map(float, input(f"Input the initial control state vector for each variable ({dim} elements): ").split()))
-        if len(x) != dim:
-            print(f"The vector must contain exactly {dim} elements. Please try again.")
+        x = list(map(float, input(f"Input the initial control state vector for each variable ({n} elements): ").split()))
+        if len(x) != n:
+            print(f"The vector must contain exactly {n} elements. Please try again.")
             continue
         return np.array(x)

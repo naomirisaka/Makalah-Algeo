@@ -34,6 +34,7 @@ def main():
                 print(f"State after corrections are applied: {x}")
             else:
                 print("No corrections applied.")
+                
         else:
             print("System is stable.")
             quit()
