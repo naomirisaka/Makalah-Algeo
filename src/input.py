@@ -2,8 +2,11 @@ import numpy as np
 
 def input_matrix(): # matrix input and validation
     dim = int(input("Amount of control variables: "))
+    while dim < 1:
+        print("The amount of control variables must be at least 1. Please try again.")
+        dim = int(input("Amount of control variables: "))
+
     print(f"Input the influence (-1 to 1) between control variables in {dim} x {dim} matrix form.") # negative indicates negative correlation
-    
     mat = []
     for i in range(dim):
         while True:
