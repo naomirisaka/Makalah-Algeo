@@ -5,11 +5,12 @@ This project uses the concept of complex eigenvalues to understand an aircraft d
 ## Project Structure
 The project is structured as below:
 ```
-├── src/
-│   ├── input.py                
-│   ├── main.py             
-│   └── system_functions.py    
-└── README.md
+├── .gitignore
+├── README.md
+└── src/
+    ├── input.py                
+    ├── main.py             
+    └── system_functions.py    
 ```
 ## How to Use
 1. Clone the repository: 
